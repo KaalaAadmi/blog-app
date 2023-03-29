@@ -94,15 +94,16 @@ export default function Home({ allBlogPosts }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.png" />
       </Head>
-      <Script
-        strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-      />
-      <Script
-        id="google-analytics"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
+      <main className={styles.container}>
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
       
               window.dataLayer = window.dataLayer || [];
               function gtag() {dataLayer.push(arguments);}
@@ -110,9 +111,8 @@ export default function Home({ allBlogPosts }) {
               gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}',{
                 page_path:window.location.pathname,
               });`,
-        }}
-      />
-      <main className={styles.container}>
+          }}
+        />
         {/* Page Header */}
         <Header />
         {/* Search Bar */}
