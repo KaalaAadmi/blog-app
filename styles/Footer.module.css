@@ -1,0 +1,38 @@
+.footer {
+  position: relative;
+  background: #264653;
+  min-height: 50px;
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 1000;
+  margin-top: -5px;
+  bottom: 0;
+}
+
+.social_icons {
+  padding-inline-start: 0 !important;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px -10px;
+  flex-wrap: wrap;
+}
+
+.social_icons li {
+  list-style: none;
+}
+
+.social_icons li a {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.social_icons li a:hover {
+  transform: translateY(-10px);
+}

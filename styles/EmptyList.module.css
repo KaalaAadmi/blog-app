@@ -1,0 +1,11 @@
+.emptyList__wrap {
+  height:90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emptyList__wrap_img {
+  max-width: 250px;
+  width: 100%;
+}
