@@ -73,7 +73,7 @@ const NewsLetter = () => {
           textTransform: "uppercase",
         }}
       >
-        Subscribe to our News Letter:
+        Subscribe to our Newsletter:
       </label>
       <div
         style={{
