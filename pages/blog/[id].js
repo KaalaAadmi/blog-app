@@ -41,7 +41,11 @@ const BlogPage = ({ blog }) => {
             <div className={styles.blog__description}>{blog.description}</div>
             {blog.sections.map((section, index) => {
               if (section.sectionType === "title") {
-                return <h1 style={{ color: "#264653" }} key={section._id}>{section.sectionText}</h1>;
+                return (
+                  <h1 style={{ color: "#264653" }} key={section._id}>
+                    {section.sectionText}
+                  </h1>
+                );
               } else if (section.sectionType === "image") {
                 return (
                   <img
