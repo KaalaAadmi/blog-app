@@ -89,7 +89,7 @@ export default function Home({ allBlogPosts }) {
         />
         <meta
           property="og:description"
-          content="Get your daily dose of anime and manga reviews, news, and analysis from our passionate team of otaku. Join us on a journey through the fascinating world of anime!"
+          content="The Best Place to Geek Out on Anime: The Fellow Weeb - Your Ultimate Otaku Hub"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.png" />

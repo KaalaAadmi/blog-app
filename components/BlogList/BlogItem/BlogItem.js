@@ -20,26 +20,19 @@ const BlogItem = ({
 }) => {
   return (
     <div className={styles.blogItem__wrap}>
-      {/* <Link
-        // href="/blog/[id]"
-        href={`/blog/${_id}`}
-        style={{ textDecoration: "none", color: "inherit" }}
-      > */}
       <Link
-        // href="/blog/[id]"
         href={`/blog/${_id}`}
         style={{ textDecoration: "none", color: "inherit" }}
       >
         <div>
           <img src={cover} alt="cover" className={styles.blogItem__cover} />
           <Chip label={category} />
-          <h3 className={styles.blogItem__wrap_h3}>{title}</h3>
+          <h3 className={styles.blogItem__wrap_h3} style={{color:'#264653'}}>{title}</h3>
           <p className={styles.blogItem__desc}>{description}</p>
         </div>
       </Link>
       <footer className={styles.blogItem__wrap_footer}>
         <Link
-          // href="/blog/[id]"
           href={`/author/about`}
           style={{ textDecoration: "none", color: "inherit" }}
         >
@@ -52,7 +45,7 @@ const BlogItem = ({
               width={50}
             />
             <div>
-              <h6 style={{fontSize:'0.9rem'}}>{authorName}</h6>
+              <h6 style={{fontSize:'0.9rem',color:'#2a9d8f'}}>{authorName}</h6>
               <p className={styles.blogItem__author_p}>
                 {format(parseISO(createdAt), "dd MMM, yyyy")}
               </p>
@@ -60,7 +53,7 @@ const BlogItem = ({
           </div>
         </Link>
         <Link className={styles.blogItem__link} href={`/blog/${_id}`}>
-          <FaArrowRight />
+          <FaArrowRight color="#264653"/>
         </Link>
       </footer>
       {/* </Link> */}
