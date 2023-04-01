@@ -11,6 +11,7 @@ import Chip from "./../../components/Chip/Chip";
 import styles from "../../styles/Blog.module.css";
 import EmptyList from "./../../components/EmptyList/EmptyList";
 import Footer from "./../../components/Footer/Footer";
+import FAB from "./../../components/FAB/FAB";
 
 const BlogPage = ({ blog }) => {
   return (
@@ -89,6 +90,8 @@ const BlogPage = ({ blog }) => {
         ) : (
           <EmptyList />
         )}
+      <FAB />
+      {/* <Test/> */}
       </div>
       <Footer />
     </>

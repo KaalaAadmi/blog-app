@@ -17,10 +17,10 @@
     "eslint-config-next": "13.2.4",
     "mongoose": "^7.0.3",
     "next": "13.2.4",
+    "next-share": "^0.20.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
-    "react-share": "^4.4.1",
     "react-toastify": "^9.1.2",
     "react-wavify": "^1.8.0"
   }
