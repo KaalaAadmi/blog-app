@@ -32,7 +32,6 @@ const FAB = () => {
         alignItems: "flex-end",
         zIndex: 100000000,
       }}
-      onMouseLeave={() => setOpen(false)}
     >
       {open ? (
         <div
@@ -70,7 +69,7 @@ const FAB = () => {
               backgroundColor: "#fb8500",
             }}
           >
-            <IoClose size={20} style={{color:'#f0f0f0'}}/>
+            <IoClose onClick={(e) => setOpen((prev) => !prev)} size={20} style={{color:'#f0f0f0'}}/>
           </div>
         </div>
       ) : (
