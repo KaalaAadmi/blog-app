@@ -1,5 +1,6 @@
 Add toasts @done
 add social share icons for blog posts @done
 upload page @done
-cover image for blog upload make it go to firebase.
+cover image for blog upload make it go to firebase. @done 
+make authorName and authorAvatar as default inputs to avoid repeated uploads of same file. @done
 make sitemap for the website
