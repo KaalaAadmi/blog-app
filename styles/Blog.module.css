@@ -33,6 +33,7 @@ margin-top:1rem;
 .blog__subCategory {
   display: flex;
   justify-content: center;
+  flex-direction: row;
 }
 
 .cover {
@@ -42,8 +43,7 @@ margin-top:1rem;
 }
 
 .subcategory__inner {
-  display: flex;
-  flex-direction: row;
+  /* display: flex; */
   margin: 1rem;
 }
 

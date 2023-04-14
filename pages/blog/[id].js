@@ -38,10 +38,7 @@ const BlogPage = ({ blog }) => {
                 ))}
               </div>
             </header>
-            <Image
-              sizes="fill"
-              width={300}
-              height={300}
+            <img
               src={blog.cover}
               alt="cover"
               className={styles.cover}
@@ -56,10 +53,7 @@ const BlogPage = ({ blog }) => {
                 );
               } else if (section.sectionType === "image") {
                 return (
-                  <Image
-                    sizes="fill"
-                    height={300}
-                    width={300}
+                  <img
                     className={styles.cover}
                     key={section._id}
                     src={section.sectionText}

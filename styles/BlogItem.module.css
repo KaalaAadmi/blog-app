@@ -50,6 +50,7 @@
 .blogItem__author {
   display: flex;
   align-items: center;
+  flex-direction: row;
 }
 
 .blogItem__author_img {
