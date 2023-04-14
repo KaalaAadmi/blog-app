@@ -78,6 +78,7 @@ const NewsLetter = () => {
       <div
         style={{
           display: "flex",
+          flexDirection:'row',
           justifyContent: "center",
         }}
       >
