@@ -1,0 +1,3 @@
+# Block all crawlers for /blog/upload
+User-agent: *
+Disallow: /blog/upload

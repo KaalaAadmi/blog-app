@@ -25,7 +25,7 @@ const BlogItem = ({
         style={{ textDecoration: "none", color: "inherit" }}
       >
         <div>
-          <img src={cover} alt="cover" className={styles.blogItem__cover} />
+          <Image sizes="fill" width={300} height={250} src={cover} alt="cover" className={styles.blogItem__cover} />
           <Chip label={category} />
           <h3 className={styles.blogItem__wrap_h3} style={{color:'#264653'}}>{title}</h3>
           <p className={styles.blogItem__desc}>{description}</p>

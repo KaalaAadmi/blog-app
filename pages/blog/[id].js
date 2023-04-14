@@ -38,7 +38,14 @@ const BlogPage = ({ blog }) => {
                 ))}
               </div>
             </header>
-            <img src={blog.cover} alt="cover" className={styles.cover} />
+            <Image
+              sizes="fill"
+              width={300}
+              height={300}
+              src={blog.cover}
+              alt="cover"
+              className={styles.cover}
+            />
             <div className={styles.blog__description}>{blog.description}</div>
             {blog.sections.map((section, index) => {
               if (section.sectionType === "title") {
@@ -49,7 +56,10 @@ const BlogPage = ({ blog }) => {
                 );
               } else if (section.sectionType === "image") {
                 return (
-                  <img
+                  <Image
+                    sizes="fill"
+                    height={300}
+                    width={300}
                     className={styles.cover}
                     key={section._id}
                     src={section.sectionText}
@@ -90,8 +100,8 @@ const BlogPage = ({ blog }) => {
         ) : (
           <EmptyList />
         )}
-      <FAB />
-      {/* <Test/> */}
+        <FAB />
+        {/* <Test/> */}
       </div>
       <Footer />
     </>

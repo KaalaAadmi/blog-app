@@ -42,6 +42,8 @@ margin-top:1rem;
 }
 
 .subcategory__inner {
+  display: flex;
+  flex-direction: row;
   margin: 1rem;
 }
 
